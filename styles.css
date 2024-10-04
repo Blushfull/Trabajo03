@@ -1,3 +1,5 @@
+
+/* Tipo de letra y color de fondo.*/
 body {
     font-family: Arial, sans-serif;
     max-width: 600px;
@@ -9,7 +11,7 @@ body {
 h1 {
     text-align: center;
 }
-
+/* Agregamos flex para el formulario*/
 form {
     display: flex;
     justify-content: space-between;
@@ -22,7 +24,7 @@ input {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-
+/* Aqui los estilos para el boton agregar*/
 button {
     padding: 10px;
     border: none;
@@ -45,7 +47,7 @@ li {
     display: flex;
     justify-content: space-between;
 }
-
+/* Aqui los estilos para el boton eliminar*/
 .delete {
     background-color: red;
     color: white;
@@ -53,7 +55,7 @@ li {
     padding: 5px 10px;
     cursor: pointer;
 }
-
+/* Agregamos el media query para hacerlo responsivo*/
 @media (max-width: 600px) {
     input {
         width: 70%;
@@ -64,6 +66,7 @@ li {
     }
 }
 
+/* Color para cuando se completa una tarea y se genera una linea tachando la tarea*/
 .completed {
     text-decoration: line-through;
     color: gray;

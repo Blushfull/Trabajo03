@@ -1,4 +1,7 @@
-document.getElementById('task-form').addEventListener('submit', function(e) {
+
+
+//Aqui se genera el input para ingresar en la lista de tareas
+ocument.getElementById('task-form').addEventListener('submit', function(e) {
     e.preventDefault();
     
     const taskInput = document.getElementById('new-task').value;
@@ -9,7 +12,7 @@ document.getElementById('task-form').addEventListener('submit', function(e) {
 
     const li = document.createElement('li');
     li.textContent = taskInput;
-
+//Aqui se generan los botones para eliminar
     const deleteBtn = document.createElement('button');
     deleteBtn.textContent = 'Eliminar';
     deleteBtn.classList.add('delete');
@@ -38,7 +41,7 @@ document.getElementById('task-list').addEventListener('click', function(e) {
     }
 });
 
-
+//Codigo para guardar con LocalStorage
 function saveTasks() {
     const tasks = [];
     document.querySelectorAll('#task-list li').forEach(function(task) {
