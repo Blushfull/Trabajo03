@@ -1,0 +1,6 @@
+
+
+Requisitos
+
+1. Tener el complemento live server
+2. presionar click derecho en index.html y ejecutar con live server, esto te redireccionara al navegador.
